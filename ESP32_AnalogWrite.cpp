@@ -101,7 +101,7 @@ void analogWrite(uint8_t pin, uint32_t value)
     uint32_t duty =0;
     if (value >= 0)
     {
-    uint32_t duty = min(value, (levels-1));
+      duty = min(value, (levels-1));
     }
     // write duty to LEDC
     ledcWrite(channel, duty);

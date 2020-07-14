@@ -1,7 +1,8 @@
 #ifndef _ESP32_ANALOG_WRITE_
   #define _ESP32_ANALOG_WRITE_
-
-  #include <Arduino.h>
+  #ifndef Arduino_h
+		#include <Arduino.h>
+	#endif
 
   typedef struct analog_write_channel
   {
